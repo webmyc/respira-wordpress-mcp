@@ -1,0 +1,57 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.webmyc/respira-wordpress",
+  "title": "Respira WordPress MCP",
+  "description": "WordPress MCP server with native page builder, WooCommerce, SEO, and accessibility tools.",
+  "repository": {
+    "url": "https://github.com/webmyc/respira-wordpress",
+    "source": "github"
+  },
+  "websiteUrl": "https://respira.press",
+  "icons": [
+    {
+      "src": "https://respira.press/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "version": "5.5.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@respira/wordpress-mcp-server",
+      "version": "5.5.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "WORDPRESS_URL",
+          "description": "WordPress site URL for the single-site env setup.",
+          "format": "string",
+          "placeholder": "https://example.com"
+        },
+        {
+          "name": "WORDPRESS_API_KEY",
+          "description": "Respira API key for the single-site env setup.",
+          "format": "string",
+          "isSecret": true
+        },
+        {
+          "name": "RESPIRA_CONFIG_B64",
+          "description": "Base64-encoded multi-site Respira config JSON.",
+          "format": "string",
+          "isSecret": true
+        },
+        {
+          "name": "RESPIRA_CONFIG_FILE",
+          "description": "Path to a Respira config JSON file.",
+          "format": "filepath",
+          "placeholder": "~/.respira/config.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      wordpressUrl:
+        type: string
+        description: "WordPress site URL (e.g. https://example.com)"
+      wordpressApiKey:
+        type: string
+        description: "Respira API key from wp-admin > Respira > Setup"
+      respiraConfigFile:
+        type: string
+        description: "Path to multi-site config JSON (alternative to single-site env vars)"
+      respiraConfigB64:
+        type: string
+        description: "Base64-encoded multi-site config JSON"
+    additionalProperties: false
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', '@respira/wordpress-mcp-server'],
+      env: {
+        ...(config.wordpressUrl ? { WORDPRESS_URL: config.wordpressUrl } : {}),
+        ...(config.wordpressApiKey ? { WORDPRESS_API_KEY: config.wordpressApiKey } : {}),
+        ...(config.respiraConfigFile ? { RESPIRA_CONFIG_FILE: config.respiraConfigFile } : {}),
+        ...(config.respiraConfigB64 ? { RESPIRA_CONFIG_B64: config.respiraConfigB64 } : {})
+      }
+    })
+  exampleConfig:
+    wordpressUrl: "https://example.com"
+    wordpressApiKey: "respira_your_api_key_here"
