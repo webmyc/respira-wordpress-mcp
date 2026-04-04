@@ -2,9 +2,9 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.webmyc/respira-wordpress",
   "title": "Respira WordPress MCP",
-  "description": "WordPress MCP server with native page builder, WooCommerce, SEO, and accessibility tools.",
+  "description": "172 tools for 11 page builders. Duplicate-before-edit safety with rollback.",
   "repository": {
-    "url": "https://github.com/webmyc/respira-wordpress",
+    "url": "https://github.com/webmyc/respira-wordpress-mcp",
     "source": "github"
   },
   "websiteUrl": "https://respira.press",
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "version": "5.5.1",
+  "version": "5.5.2",
   "packages": [
     {
       "registryType": "npm",
