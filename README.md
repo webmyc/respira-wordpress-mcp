@@ -14,9 +14,16 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/@respira/wordpress-mcp-server"><img src="https://img.shields.io/npm/v/@respira/wordpress-mcp-server.svg?style=flat-square&color=10b981" alt="npm version"></a>
   <a href="https://www.npmjs.com/package/@respira/wordpress-mcp-server"><img src="https://img.shields.io/npm/dm/@respira/wordpress-mcp-server.svg?style=flat-square" alt="npm downloads"></a>
+  <a href="https://glama.ai/mcp/servers/webmyc/respira-wordpress-mcp"><img src="https://glama.ai/mcp/servers/webmyc/respira-wordpress-mcp/badges/score.svg" alt="Glama Score"></a>
   <img src="https://img.shields.io/badge/tools-172-10b981?style=flat-square" alt="172 Tools">
   <img src="https://img.shields.io/badge/builders-11-10b981?style=flat-square" alt="11 Page Builders">
   <img src="https://img.shields.io/badge/TypeScript-100%25-blue?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+</p>
+
+<p align="center">
+  <a href="https://glama.ai/mcp/servers/webmyc/respira-wordpress-mcp">
+    <img src="https://glama.ai/mcp/servers/webmyc/respira-wordpress-mcp/badges/quality.svg" alt="Respira for WordPress MCP server" />
+  </a>
 </p>
 
 ## Quick Start
@@ -96,6 +103,28 @@ Pre-built workflows: SEO audits, accessibility scans, technical debt analysis, b
 - Node.js 18+
 - WordPress site with [Respira plugin](https://respira.press) installed
 - API key from wp-admin → Respira → Setup
+
+## Changelog
+
+### 5.5.0 (April 2026)
+- Graceful Sentry profiler initialization
+- Angie bridge error handling for Elementor integration
+- Fixed MCP registry description and public repo
+
+### 5.4.0 (March 2026)
+- 20 Bricks Deep Intelligence tools (ACSS, design system, query loops)
+- Cross-site element search
+- Optimistic locking with contentHash
+- 172 total tools
+
+### 5.2.0 (March 2026)
+- 65 new tools — element-level editing, build_page, HTML-to-builder conversion
+- Stock images, tool governance, dynamic schemas for 11 builders
+
+### 5.0.0 (March 2026)
+- Automatic version history on every edit
+- Changes mode that preserves URLs
+- Storage management
 
 ## Links
 
