@@ -4,7 +4,7 @@
   "title": "Respira WordPress MCP",
   "description": "180+ tools for 12 page builders. Element-level editing, full page creation, HTML-to-builder conversion with rendering fidelity validation, per-site tool governance, snapshots + duplicate-before-edit safety, stock images, bulk operations. Requires the Respira WordPress plugin and a valid license to function.",
   "repository": {
-    "url": "https://github.com/webmyc/respira-wordpress-mcp",
+    "url": "https://github.com/respira-press/respira-wordpress-mcp",
     "source": "github"
   },
   "websiteUrl": "https://respira.press",
